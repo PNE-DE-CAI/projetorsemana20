@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Relatório de Projeção de Frequência — URE Caieiras — Ano Letivo 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+@page{size:A4;margin:12mm 10mm 16mm 10mm}
+:root{--azul-escuro:#0a2f6c;--azul-profundo:#041a3a;--azul-medio:#123f7a;--vermelho:#d32f2f;--vermelho-hover:#b71c1c;--dourado:#ffec9e;--dourado-claro:#fff8dc;--fundo-externo:#041633;--fundo-interno:#0c1825;--superficie:#f8fafc;--superficie-alt:#f1f5f9;--borda-clara:#e0e4e9;--borda-fina:#e2e8f0;--texto-escuro:#0a2f6c;--texto-corpo:#1e293b;--texto-muted:#475569;--texto-suave:#64748b;--texto-footer:#8bacc8;--verde:#16a34a;--verde-bg:#dcfce7;--verde-escuro:#14532d;--vermelho-bg:#fee2e2;--vermelho-claro:#fff5f5;--amarelo-bg:#ffedd5;--amarelo-texto:#9a3412;--azul-badge-bg:#eef2ff;--azul-badge-txt:#1e40af;--raio-grande:48px;--raio-card:32px;--raio-pill:60px;--raio-medio:24px;--raio-pequeno:20px;--sombra-card:0 8px 24px rgba(0,0,0,.18);--sombra-float:0 16px 32px rgba(0,0,0,.12)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:radial-gradient(ellipse at 15% 30%,rgba(10,47,108,.55) 0%,transparent 55%),radial-gradient(ellipse at 85% 70%,rgba(211,47,47,.12) 0%,transparent 45%),linear-gradient(155deg,var(--fundo-externo) 0%,#030e1f 100%);min-height:100vh;padding:10px;color:var(--texto-corpo);font-size:9pt;line-height:1.5;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.cover{page-break-after:always;min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;background:radial-gradient(ellipse at 20% 80%,rgba(10,47,108,.7) 0%,transparent 50%),radial-gradient(ellipse at 80% 20%,rgba(211,47,47,.15) 0%,transparent 40%),linear-gradient(155deg,var(--fundo-externo) 0%,#020c18 100%);color:#e0e6f0;padding:40px 30px;overflow:hidden}
+.cover::before{content:'';position:absolute;top:-100px;right:-100px;width:350px;height:350px;background:radial-gradient(circle,rgba(211,47,47,.1) 0%,transparent 65%);pointer-events:none}
+.cover-logo{position:relative;z-index:1;margin-bottom:30px}
+.cover-logo img{height:90px;background:#fff;padding:8px 14px;border-radius:18px;box-shadow:0 6px 24px rgba(0,0,0,.3)}
+.cover-badge{position:relative;z-index:1;background:var(--vermelho);color:#fff;padding:8px 28px;border-radius:var(--raio-pill);font-weight:800;letter-spacing:1.5px;font-size:.75rem;text-transform:uppercase;box-shadow:0 4px 16px rgba(211,47,47,.4);margin-bottom:36px}
+.cover h1{position:relative;z-index:1;font-weight:800;font-size:28pt;line-height:1.12;margin-bottom:16px;max-width:640px;color:#fff}
+.cover h1 span{display:block;font-weight:400;font-size:16pt;color:var(--dourado);margin-top:10px}
+.cover-line{position:relative;z-index:1;width:80px;height:3px;background:linear-gradient(90deg,var(--vermelho),var(--dourado));margin:28px auto;border-radius:4px}
+.cover-meta{position:relative;z-index:1;font-family:'DM Mono',monospace;font-size:8pt;color:var(--texto-footer);line-height:2.2;letter-spacing:.06em}
+.cover-footer{position:absolute;bottom:30px;left:0;right:0;text-align:center;z-index:1;font-family:'DM Mono',monospace;font-size:7pt;color:rgba(139,172,200,.4);letter-spacing:.12em;text-transform:uppercase}
+.main-container{max-width:1100px;margin:0 auto;background:#fff;border-radius:var(--raio-grande);padding:20px;box-shadow:0 30px 60px rgba(0,0,0,.25);border:1.5px solid rgba(10,47,108,.12);position:relative;overflow:hidden}
+.main-container::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;background:radial-gradient(circle,rgba(211,47,47,.04) 0%,transparent 70%);pointer-events:none}
+.header{display:flex;justify-content:space-between;align-items:center;background:linear-gradient(135deg,rgba(10,47,108,.95) 0%,rgba(4,26,58,.97) 100%);padding:12px 24px;border-radius:var(--raio-pill);margin-bottom:20px;flex-wrap:wrap;gap:12px;border:1px solid rgba(255,236,158,.1)}
+.logo-area{display:flex;align-items:center;gap:12px}
+.logo-area img{height:44px;background:#fff;padding:4px 8px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+.logo-text{font-size:.88rem;font-weight:700;color:var(--dourado);letter-spacing:.5px;line-height:1.3}
+.logo-text span{display:block;font-size:.65rem;font-weight:500;color:rgba(255,236,158,.55);letter-spacing:1.5px;text-transform:uppercase}
+.title-badge{background:var(--vermelho);color:#fff;padding:6px 18px;border-radius:var(--raio-pill);font-weight:800;letter-spacing:1.5px;font-size:.65rem;text-transform:uppercase;box-shadow:0 4px 12px rgba(211,47,47,.35)}
+.page{page-break-after:always;padding:0}
+.page:last-child{page-break-after:auto}
+.section-title{font-size:1.2rem;font-weight:800;color:var(--azul-escuro);margin:20px 0 6px 0;padding-bottom:6px;border-bottom:2.5px solid var(--azul-escuro);display:flex;align-items:center;gap:8px}
+.section-title .num{background:var(--azul-escuro);color:var(--dourado);font-family:'DM Mono',monospace;font-size:.7rem;width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;border-radius:50%;flex-shrink:0}
+h3{font-size:.95rem;font-weight:700;color:var(--azul-medio);margin:14px 0 6px 0}
+p{margin-bottom:8px;text-align:justify;font-size:8.5pt}
+.method-box{background:linear-gradient(135deg,var(--azul-badge-bg) 0%,#f0f4ff 100%);border-left:4px solid var(--azul-escuro);padding:14px 18px;margin:14px 0;border-radius:0 var(--raio-medio) var(--raio-medio) 0}
+.method-box h3{color:var(--azul-escuro);margin-top:0;font-size:.85rem}
+.step{display:flex;align-items:flex-start;margin:8px 0;gap:10px}
+.step-num{font-family:'DM Mono',monospace;font-weight:500;font-size:.75rem;color:#fff;min-width:24px;height:24px;display:flex;align-items:center;justify-content:center;background:var(--azul-escuro);border-radius:50%;flex-shrink:0}
+.step-text{font-size:8pt;line-height:1.45}
+.step-text strong{font-family:'DM Mono',monospace;font-size:7.5pt;color:var(--azul-escuro)}
+.summary-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:14px 0}
+.summary-card{padding:14px 8px;border-radius:var(--raio-pequeno);text-align:center;border:1.5px solid}
+.summary-card .number{font-weight:800;font-size:20pt;line-height:1}
+.summary-card .label{font-family:'DM Mono',monospace;font-size:6pt;text-transform:uppercase;letter-spacing:.12em;margin-top:4px;font-weight:600}
+.card-critical{background:var(--vermelho-bg);border-color:#fca5a5;color:var(--vermelho)}
+.card-alert{background:var(--amarelo-bg);border-color:#fdba74;color:var(--amarelo-texto)}
+.card-attention{background:#fef9c3;border-color:#fde047;color:#854d0e}
+.card-target{background:var(--azul-badge-bg);border-color:#93c5fd;color:var(--azul-badge-txt)}
+.card-comfort{background:var(--verde-bg);border-color:#86efac;color:var(--verde-escuro)}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:7pt}
+thead th{font-family:'DM Mono',monospace;font-weight:500;font-size:6pt;text-transform:uppercase;letter-spacing:.08em;color:#fff;background:var(--azul-escuro);padding:7px 5px;text-align:left;white-space:nowrap}
+thead th:first-child{border-radius:8px 0 0 0}
+thead th:last-child{border-radius:0 8px 0 0}
+tbody td{padding:4px 5px;border-bottom:1px solid var(--borda-fina);vertical-align:top}
+tbody tr:nth-child(even){background:rgba(10,47,108,.02)}
+tbody tr:hover{background:rgba(10,47,108,.04)}
+td.num{text-align:right;font-family:'DM Mono',monospace;font-size:7pt}
+td.school-name{font-weight:600;max-width:150px}
+.status-badge{display:inline-block;font-family:'DM Mono',monospace;font-size:5.5pt;font-weight:600;padding:2px 7px;border-radius:var(--raio-pill);text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}
+.badge-critical{background:var(--vermelho);color:#fff}
+.badge-alert{background:var(--amarelo-texto);color:#fff}
+.badge-attention{background:#ca8a04;color:#fff}
+.badge-target{background:var(--azul-escuro);color:var(--dourado)}
+.badge-comfort{background:var(--verde);color:#fff}
+.td-red{color:var(--vermelho);font-weight:700}
+.td-orange{color:var(--amarelo-texto);font-weight:700}
+.td-green{color:var(--verde);font-weight:600}
+.detail-box{border:1.5px solid var(--borda-clara);border-radius:var(--raio-medio);margin:10px 0;overflow:hidden}
+.detail-header{padding:10px 14px;display:flex;justify-content:space-between;align-items:center}
+.detail-header h4{font-size:.88rem;font-weight:700}
+.detail-body{padding:10px 14px;background:#fff}
+.calc-steps{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:6px 0}
+.calc-step{font-family:'DM Mono',monospace;font-size:7pt;padding:6px 10px;background:var(--superficie);border-radius:var(--raio-pequeno);border-left:3px solid var(--azul-medio)}
+.calc-step .step-label{font-size:6pt;color:var(--texto-muted);text-transform:uppercase;letter-spacing:.08em}
+.calc-step .step-value{font-size:9pt;font-weight:500;color:var(--texto-corpo)}
+.box-critical{border-color:#fca5a5}
+.box-critical .detail-header{background:var(--vermelho-bg);color:var(--vermelho)}
+.box-critical .calc-step{border-left-color:var(--vermelho)}
+.box-alert{border-color:#fdba74}
+.box-alert .detail-header{background:var(--amarelo-bg);color:var(--amarelo-texto)}
+.box-alert .calc-step{border-left-color:var(--amarelo-texto)}
+.box-attention{border-color:#fde047}
+.box-attention .detail-header{background:#fef9c3;color:#854d0e}
+.box-attention .calc-step{border-left-color:#ca8a04}
+.bar-chart{margin:14px 0}
+.bar-row{display:flex;align-items:center;margin:3px 0;gap:5px}
+.bar-label{font-family:'DM Mono',monospace;font-size:6pt;width:130px;text-align:right;flex-shrink:0;color:var(--texto-muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.bar-track{flex:1;height:14px;background:var(--superficie-alt);border-radius:var(--raio-pill);position:relative;overflow:hidden;border:1px solid var(--borda-fina)}
+.bar-fill-current{position:absolute;top:0;left:0;height:100%;border-radius:var(--raio-pill);opacity:.35}
+.bar-fill-needed{position:absolute;top:0;left:0;height:100%;border-radius:var(--raio-pill);border-right:2.5px solid}
+.bar-values{font-family:'DM Mono',monospace;font-size:6pt;width:110px;flex-shrink:0;color:var(--texto-muted)}
+.rec-box{padding:14px 16px;margin:10px 0;border-radius:var(--raio-medio);border-left:5px solid}
+.rec-box h4{font-size:.88rem;font-weight:800;margin-bottom:5px}
+.rec-box p{font-size:8pt;margin:0}
+.rec-critical{background:var(--vermelho-bg);border-color:var(--vermelho)}
+.rec-critical h4{color:var(--vermelho)}
+.rec-alert{background:var(--amarelo-bg);border-color:var(--amarelo-texto)}
+.rec-alert h4{color:var(--amarelo-texto)}
+.rec-attention{background:#fef9c3;border-color:#ca8a04}
+.rec-attention h4{color:#854d0e}
+.rec-comfort{background:var(--verde-bg);border-color:var(--verde)}
+.rec-comfort h4{color:var(--verde-escuro)}
+.note-box{background:var(--superficie);border:1.5px solid var(--borda-fina);padding:12px 14px;margin:12px 0;border-radius:var(--raio-medio);font-size:7.5pt;color:var(--texto-muted)}
+.note-box strong{color:var(--texto-corpo)}
+.toc{margin:16px 0}
+.toc-item{display:flex;justify-content:space-between;align-items:baseline;padding:5px 0;border-bottom:1px dotted var(--borda-fina);font-size:8.5pt}
+.toc-item .toc-title{font-weight:600;color:var(--texto-corpo)}
+.toc-item .toc-page{font-family:'DM Mono',monospace;font-size:7.5pt;color:var(--texto-muted)}
+.toc-section{font-family:'DM Mono',monospace;font-size:6.5pt;text-transform:uppercase;letter-spacing:.15em;color:var(--azul-medio);margin-top:12px;margin-bottom:3px;font-weight:600}
+footer{text-align:center;margin-top:1.5rem;padding:1rem;color:var(--texto-footer);font-size:.62rem;border-top:1px solid var(--borda-fina);letter-spacing:.3px}
+footer a{color:var(--vermelho);text-decoration:none}
+.page-num{font-family:'DM Mono',monospace;font-size:6.5pt;color:var(--texto-muted);text-align:right;margin-top:4px}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+.main-container{animation:fadeUp .4s ease forwards}
+@media print{body{background:#fff!important;padding:0;font-size:8pt}.cover{min-height:auto;height:100vh;background:radial-gradient(ellipse at 20% 80%,rgba(10,47,108,.7) 0%,transparent 50%),radial-gradient(ellipse at 80% 20%,rgba(211,47,47,.15) 0%,transparent 40%),linear-gradient(155deg,var(--fundo-externo) 0%,#020c18 100%)!important}.main-container{max-width:100%;box-shadow:none;border-radius:0;padding:0;border:none}.header{border-radius:12px}table{font-size:6.5pt}thead th{font-size:5.5pt;padding:4px}tbody td{padding:3px 4px}}
+@media(max-width:640px){.main-container{padding:10px;border-radius:24px}.header{padding:10px 14px;border-radius:24px}.summary-grid{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+
+<!-- CAPA -->
+<div class="cover">
+  <div class="cover-logo">
+    <img src="https://i.ibb.co/0p01LzxB/logo3de.jpg" alt="Logo SEDUC SP">
+  </div>
+  <div class="cover-badge">URE Caieiras</div>
+  <h1>
+    Relatório de Projeção<br>de Frequência Escolar
+    <span>Ano Letivo 2026 — 23 Semanas Restantes</span>
+  </h1>
+  <div class="cover-line"></div>
+  <div class="cover-meta">
+    BASE DE DADOS: SEMANA 20 &nbsp;&middot;&nbsp; 67 ESCOLAS &nbsp;&middot;&nbsp; 43 SEMANAS LETIVAS<br>
+    META IFA: 84,4% (MÉDIA) &nbsp;&middot;&nbsp; TPSS: 80,0%<br>
+  </div>
+  <div class="cover-footer">
+    Secretaria de Educação do Estado de São Paulo &nbsp;&middot;&nbsp; Documento de Uso Interno &nbsp;&middot;&nbsp; Junho 2026
+  </div>
+</div>
+
+<!-- SUMÁRIO -->
+<div class="main-container">
+<div class="page">
+  <div class="header">
+    <div class="logo-area">
+      <img src="https://i.ibb.co/0p01LzxB/logo3de.jpg" alt="Logo SEDUC SP">
+      <div class="logo-text">URE Caieiras<span>UNIDADE REGIONAL DE ENSINO CAIEIRAS — SP</span></div>
+    </div>
+    <div class="title-badge">Relatório de Frequência 2026</div>
+  </div>
+  <div class="section-title"><span class="num">S</span> Sumário</div>
+  <div class="toc">
+    <div class="toc-section">Contextualização</div>
+    <div class="toc-item"><span class="toc-title">1. Introdução e Contexto</span><span class="toc-page">03</span></div>
+    <div class="toc-item"><span class="toc-title">2. Metodologia de Cálculo</span><span class="toc-page">03</span></div>
+    <div class="toc-item"><span class="toc-title">3. Exemplo Prático</span><span class="toc-page">03</span></div>
+    <div class="toc-section">Panorama Geral</div>
+    <div class="toc-item"><span class="toc-title">4. Resumo Executivo</span><span class="toc-page">04</span></div>
+    <div class="toc-item"><span class="toc-title">5. Tabela Completa — 67 Escolas</span><span class="toc-page">04–06</span></div>
+    <div class="toc-section">Análise de Risco</div>
+    <div class="toc-item"><span class="toc-title">6. Escolas em Situação Crítica e Alerta</span><span class="toc-page">07</span></div>
+    <div class="toc-item"><span class="toc-title">7. Escolas em Atenção e No Alvo</span><span class="toc-page">08</span></div>
+    <div class="toc-item"><span class="toc-title">8. Escolas Confortáveis — Top 10 Folga</span><span class="toc-page">09</span></div>
+    <div class="toc-section">Acompanhamento</div>
+    <div class="toc-item"><span class="toc-title">9. Análise por Supervisor de Ensino</span><span class="toc-page">09</span></div>
+    <div class="toc-item"><span class="toc-title">10. Recomendações Estratégicas</span><span class="toc-page">10</span></div>
+  </div>
+  <div class="note-box" style="margin-top:20px;">
+    <strong>Legenda de Situações:</strong><br>
+    <span class="status-badge badge-critical">CRÍTICO</span> Precisa &gt;5pp acima da frequência atual &nbsp;&middot;&nbsp;
+    <span class="status-badge badge-alert">ALERTA</span> Precisa 3–5pp acima &nbsp;&middot;&nbsp;
+    <span class="status-badge badge-attention">ATENÇÃO</span> Precisa 0,5–3pp acima &nbsp;&middot;&nbsp;
+    <span class="status-badge badge-target">NO ALVO</span> Diferença &lt;0,5pp &nbsp;&middot;&nbsp;
+    <span class="status-badge badge-comfort">CONFORTÁVEL</span> Frequência necessária abaixo da atual
+  </div>
+  <div class="page-num">Página 02</div>
+</div>
+
+<!-- INTRO + METODOLOGIA -->
+<div class="page">
+  <div class="header">
+    <div class="logo-area">
+      <img src="https://i.ibb.co/0p01LzxB/logo3de.jpg" alt="Logo SEDUC SP">
+      <div class="logo-text">URE Caieiras<span>UNIDADE REGIONAL DE ENSINO CAIEIRAS — SP</span></div>
+    </div>
+    <div class="title-badge">Relatório de Frequência 2026</div>
+  </div>
+
+  <div class="section-title"><span class="num">1</span> Introdução e Contexto</div>
+  <p>O presente relatório tem como objetivo projetar a frequência escolar necessária para as <strong>23 semanas restantes</strong> do ano letivo de 2026 (Semanas 21 a 43), de modo que cada uma das <strong>67 escolas</strong> da rede atinja seu <strong>Índice de Frequência Anual (IFA)</strong> específico.</p>
+  <p>Conforme as diretrizes da SEDUC, a manutenção da frequência dos alunos é prioridade estratégica para a prevenção à evasão escolar. O ano letivo de 2026 conta com <strong>43 semanas</strong> de análise no sistema Escola Total. Os dados referem-se à <strong>Semana 20</strong>.</p>
+
+  <div class="section-title"><span class="num">2</span> Metodologia de Cálculo</div>
+  <div class="method-box">
+    <h3>Fórmula em 4 Passos</h3>
+    <div class="step"><div class="step-num">1</div><div class="step-text"><strong>Meta Total = IFA × 43 semanas</strong><br>Frequência total que a escola precisa acumular no ano.</div></div>
+    <div class="step"><div class="step-num">2</div><div class="step-text"><strong>Acumulado = Frequência Atual × 20 semanas</strong><br>Frequência já conquistada nas primeiras 20 semanas.</div></div>
+    <div class="step"><div class="step-num">3</div><div class="step-text"><strong>Falta = Meta Total − Acumulado</strong><br>Frequência que ainda precisa ser conquistada nas 23 semanas restantes.</div></div>
+    <div class="step"><div class="step-num">4</div><div class="step-text"><strong>Necessária = Falta ÷ 23 semanas</strong><br>Frequência média semanal obrigatória para atingir o IFA.</div></div>
+  </div>
+  <div class="note-box">
+    <strong>Interpretação:</strong> Se a frequência necessária <strong>≤ frequência atual</strong>, a escola tem folga. Se a frequência necessária <strong>> frequência atual</strong>, a escola precisa <strong>elevar</strong> seu desempenho.
+  </div>
+
+  <div class="section-title"><span class="num">3</span> Exemplo Prático — Escola Alfried Theodor Weiszflog</div>
+  <div class="calc-steps">
+    <div class="calc-step"><div class="step-label">Passo 1 — Meta Total</div><div class="step-value">0,840 × 43 = 36.120</div></div>
+    <div class="calc-step"><div class="step-label">Passo 2 — Acumulado</div><div class="step-value">0,940 × 20 = 18.800</div></div>
+    <div class="calc-step"><div class="step-label">Passo 3 — Falta</div><div class="step-value">36.120 − 18.800 = 17.320</div></div>
+    <div class="calc-step"><div class="step-label">Passo 4 — Necessária</div><div class="step-value">17.320 ÷ 23 = <strong style="color:var(--verde);">75,30%</strong></div></div>
+  </div>
+  <p style="font-size:8pt; color:var(--texto-muted);">A média acumulada (94,0%) já está acima do IFA (84,0%). Para manter, a escola precisa de pelo menos <strong>75,30%</strong> — margem de <strong>18,70pp</strong>.</p>
+  <div class="page-num">Página 03</div>
+</div>
+
+<!-- RESUMO EXECUTIVO + TABELA (PARTE 1) -->
+<div class="page">
+  <div class="header">
+    <div class="logo-area">
+      <img src="https://i.ibb.co/0p01LzxB/logo3de.jpg" alt="Logo SEDUC SP">
+      <div class="logo-text">URE Caieiras<span>UNIDADE REGIONAL DE ENSINO CAIEIRAS — SP</span></div>
+    </div>
+    <div class="title-badge">Relatório de Frequência 2026</div>
+  </div>
+
+  <div class="section-title"><span class="num">4</span> Resumo Executivo</div>
+  <p style="font-size:8.5pt; color:var(--texto-muted); margin-bottom:10px;">Das 67 escolas, <strong>31 escolas</strong> precisam elevar ou manter com atenção a frequência nas próximas 23 semanas, com 10 escolas em situação crítica. <strong>36 escolas</strong> encontram-se confortáveis.</p>
+
+  <div class="summary-grid">
+    <div class="summary-card card-critical"><div class="number">10</div><div class="label">Crítico</div></div>
+    <div class="summary-card card-alert"><div class="number">6</div><div class="label">Alerta</div></div>
+    <div class="summary-card card-attention"><div class="number">10</div><div class="label">Atenção</div></div>
+    <div class="summary-card card-target"><div class="number">5</div><div class="label">No Alvo</div></div>
+    <div class="summary-card card-comfort"><div class="number">36</div><div class="label">Confortável</div></div>
+  </div>
+
+  <div class="section-title"><span class="num">5</span> Tabela — Escolas que Precisam Elevar Frequência</div>
+  <p style="font-size:7.5pt; color:var(--texto-muted); margin-bottom:6px;">Ordenadas da situação mais crítica à mais confortável. Gap = Necessária − Atual.</p>
+
+  <table>
+    <thead><tr><th>#</th><th>Escola</th><th>IFA</th><th>Freq. Atual</th><th>Acum. (×20)</th><th>Meta Total</th><th>Falta</th><th>Necessária</th><th>Gap</th><th>Situação</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td class="school-name">Isaura de Miranda Botto Profa</td><td class="num">84,0%</td><td class="num">77,6%</td><td class="num">15.520</td><td class="num">36.120</td><td class="num">20.600</td><td class="num td-red">89,57%</td><td class="num td-red">+11,97</td><td><span class="status-badge badge-critical">CRÍTICO</span></td></tr>
+      <tr><td>2</td><td class="school-name">Afonso Moreno</td><td class="num">82,8%</td><td class="num">77,5%</td><td class="num">15.500</td><td class="num">35.604</td><td class="num">20.104</td><td class="num td-red">87,41%</td><td class="num td-red">+9,91</td><td><span class="status-badge badge-critical">CRÍTICO</span></td></tr>
+      <tr><td>3</td><td class="school-name">Alberto Graf Capitão</td><td class="num">84,0%</td><td class="num">78,7%</td><td class="num">15.740</td><td class="num">36.120</td><td class="num">20.380</td><td class="num td-red">88,61%</td><td class="num td-red">+9,91</td><td><span class="status-badge badge-critical">CRÍTICO</span></td></tr>
+      <tr><td>4</td><td class="school-name">Jardim das Rosas</td><td class="num">83,5%</td><td class="num">79,0%</td><td class="num">15.800</td><td class="num">35.905</td><td class="num">20.105</td><td class="num td-red">87,41%</td><td class="num td-red">+8,41</td><td><span class="status-badge badge-critical">CRÍTICO</span></td></tr>
+      <tr><td>5</td><td class="school-name">José de Barros Martins Editor</td><td class="num">83,0%</td><td class="num">78,5%</td><td class="num">15.700</td><td class="num">35.690</td><td class="num">19.990</td><td class="num td-red">86,91%</td><td class="num td-red">+8,41</td><td><span class="status-badge badge-critical">CRÍTICO</span></td></tr>
+      <tr><td>6</td><td class="school-name">Nair Hannickel Romaro</td><td class="num">84,0%</td><td class="num">79,8%</td><td class="num">15.960</td><td class="num">36.120</td><td class="num">20.160</td><td class="num td-red">87,65%</td><td class="num td-red">+7,85</td><td><span class="status-badge badge-critical">CRÍTICO</span></td></tr>
+      <tr><td>7</td><td class="school-name">Rituco Mitani Profa</td><td class="num">83,0%</td><td class="num">78,9%</td><td class="num">15.780</td><td class="num">35.690</td><td class="num">19.910</td><td class="num td-red">86,57%</td><td class="num td-red">+7,67</td><td><span class="status-badge badge-critical">CRÍTICO</span></td></tr>
+      <tr><td>8</td><td class="school-name">José Roberto Melchior Dr.</td><td class="num">84,0%</td><td class="num">80,2%</td><td class="num">16.040</td><td class="num">36.120</td><td class="num">20.080</td><td class="num td-red">87,30%</td><td class="num td-red">+7,10</td><td><span class="status-badge badge-critical">CRÍTICO</span></td></tr>
+      <tr><td>9</td><td class="school-name">Hermelina Passarella Profa</td><td class="num">83,4%</td><td class="num">80,4%</td><td class="num">16.080</td><td class="num">35.862</td><td class="num">19.782</td><td class="num td-red">86,01%</td><td class="num td-red">+5,61</td><td><span class="status-badge badge-critical">CRÍTICO</span></td></tr>
+      <tr><td>10</td><td class="school-name">Jocimara Vieira da Silva Profa</td><td class="num">83,1%</td><td class="num">80,2%</td><td class="num">16.040</td><td class="num">35.733</td><td class="num">19.693</td><td class="num td-red">85,62%</td><td class="num td-red">+5,42</td><td><span class="status-badge badge-critical">CRÍTICO</span></td></tr>
+      <tr><td>11</td><td class="school-name">Zilton Bicudo Prof.</td><td class="num">83,6%</td><td class="num">81,5%</td><td class="num">16.300</td><td class="num">35.948</td><td class="num">19.648</td><td class="num td-orange">85,43%</td><td class="num td-orange">+3,93</td><td><span class="status-badge badge-alert">ALERTA</span></td></tr>
+      <tr><td>12</td><td class="school-name">Pedro Paulo de Aguiar</td><td class="num">83,4%</td><td class="num">81,6%</td><td class="num">16.320</td><td class="num">35.862</td><td class="num">19.542</td><td class="num td-orange">84,97%</td><td class="num td-orange">+3,37</td><td><span class="status-badge badge-alert">ALERTA</span></td></tr>
+      <tr><td>13</td><td class="school-name">Parque Cento e Vinte II</td><td class="num">82,8%</td><td class="num">81,0%</td><td class="num">16.200</td><td class="num">35.604</td><td class="num">19.404</td><td class="num td-orange">84,37%</td><td class="num td-orange">+3,37</td><td><span class="status-badge badge-alert">ALERTA</span></td></tr>
+      <tr><td>14</td><td class="school-name">Pedro Galrão do Nascimento</td><td class="num">84,0%</td><td class="num">82,2%</td><td class="num">16.440</td><td class="num">36.120</td><td class="num">19.680</td><td class="num td-orange">85,57%</td><td class="num td-orange">+3,37</td><td><span class="status-badge badge-alert">ALERTA</span></td></tr>
+      <tr><td>15</td><td class="school-name">Jardim Silvia II</td><td class="num">82,6%</td><td class="num">80,9%</td><td class="num">16.180</td><td class="num">35.518</td><td class="num">19.338</td><td class="num td-orange">84,08%</td><td class="num td-orange">+3,18</td><td><span class="status-badge badge-alert">ALERTA</span></td></tr>
+      <tr><td>16</td><td class="school-name">Odarico Oliveira Nasc. Prof.</td><td class="num">84,0%</td><td class="num">82,3%</td><td class="num">16.460</td><td class="num">36.120</td><td class="num">19.660</td><td class="num td-orange">85,48%</td><td class="num td-orange">+3,18</td><td><span class="status-badge badge-alert">ALERTA</span></td></tr>
+      <tr><td>17</td><td class="school-name">Nide Zaim Cardoso Profa</td><td class="num">84,0%</td><td class="num">82,4%</td><td class="num">16.480</td><td class="num">36.120</td><td class="num">19.640</td><td class="num td-orange">85,39%</td><td class="num td-orange">+2,99</td><td><span class="status-badge badge-attention">ATENÇÃO</span></td></tr>
+      <tr><td>18</td><td class="school-name">Aparecido Roberto Tonelotti Prof.</td><td class="num">84,0%</td><td class="num">82,5%</td><td class="num">16.500</td><td class="num">36.120</td><td class="num">19.620</td><td class="num td-orange">85,30%</td><td class="num td-orange">+2,80</td><td><span class="status-badge badge-attention">ATENÇÃO</span></td></tr>
+      <tr><td>19</td><td class="school-name">Luiz Alexandre dos Santos Vereador</td><td class="num">84,0%</td><td class="num">82,7%</td><td class="num">16.540</td><td class="num">36.120</td><td class="num">19.580</td><td class="num td-orange">85,13%</td><td class="num td-orange">+2,43</td><td><span class="status-badge badge-attention">ATENÇÃO</span></td></tr>
+      <tr><td>20</td><td class="school-name">José Parada Professor</td><td class="num">82,6%</td><td class="num">81,3%</td><td class="num">16.260</td><td class="num">35.518</td><td class="num">19.258</td><td class="num td-orange">83,73%</td><td class="num td-orange">+2,43</td><td><span class="status-badge badge-attention">ATENÇÃO</span></td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:7pt; color:var(--texto-muted); font-style:italic;">* Gap positivo = precisa elevar. Gap negativo = tem folga. Tabela continua na página seguinte.</p>
+  <div class="page-num">Página 04</div>
+</div>
+
+<!-- TABELA CONTINUAÇÃO + CONFORTÁVEIS -->
+<div class="page">
+  <div class="header">
+    <div class="logo-area">
+      <img src="https://i.ibb.co/0p01LzxB/logo3de.jpg" alt="Logo SEDUC SP">
+      <div class="logo-text">URE Caieiras<span>UNIDADE REGIONAL DE ENSINO CAIEIRAS — SP</span></div>
+    </div>
+    <div class="title-badge">Relatório de Frequência 2026</div>
+  </div>
+
+  <div class="section-title"><span class="num">5</span> Tabela — Escolas em Atenção e No Alvo (continuação)</div>
+  <table>
+    <thead><tr><th>#</th><th>Escola</th><th>IFA</th><th>Freq. Atual</th><th>Acum. (×20)</th><th>Meta Total</th><th>Falta</th><th>Necessária</th><th>Gap</th><th>Situação</th></tr></thead>
+    <tbody>
+      <tr><td>21</td><td class="school-name">Bairro do Itaim</td><td class="num">84,0%</td><td class="num">82,8%</td><td class="num">16.560</td><td class="num">36.120</td><td class="num">19.560</td><td class="num td-orange">85,04%</td><td class="num td-orange">+2,24</td><td><span class="status-badge badge-attention">ATENÇÃO</span></td></tr>
+      <tr><td>22</td><td class="school-name">Ana Maria Garrido Orlandin Profa</td><td class="num">82,3%</td><td class="num">81,2%</td><td class="num">16.240</td><td class="num">35.389</td><td class="num">19.149</td><td class="num td-orange">83,26%</td><td class="num td-orange">+2,06</td><td><span class="status-badge badge-attention">ATENÇÃO</span></td></tr>
+      <tr><td>23</td><td class="school-name">Maria Zeza Gomes de Oliveira</td><td class="num">84,0%</td><td class="num">82,9%</td><td class="num">16.580</td><td class="num">36.120</td><td class="num">19.540</td><td class="num td-orange">84,96%</td><td class="num td-orange">+2,06</td><td><span class="status-badge badge-attention">ATENÇÃO</span></td></tr>
+      <tr><td>24</td><td class="school-name">Suzana Dias</td><td class="num">84,0%</td><td class="num">83,3%</td><td class="num">16.660</td><td class="num">36.120</td><td class="num">19.460</td><td class="num td-orange">84,61%</td><td class="num td-orange">+1,31</td><td><span class="status-badge badge-attention">ATENÇÃO</span></td></tr>
+      <tr><td>25</td><td class="school-name">Ivone dos Anjos da Silva Campos Profa</td><td class="num">84,0%</td><td class="num">83,4%</td><td class="num">16.680</td><td class="num">36.120</td><td class="num">19.440</td><td class="num td-orange">84,52%</td><td class="num td-orange">+1,12</td><td><span class="status-badge badge-attention">ATENÇÃO</span></td></tr>
+      <tr><td>26</td><td class="school-name">Paulo Duarte</td><td class="num">83,0%</td><td class="num">82,6%</td><td class="num">16.520</td><td class="num">35.690</td><td class="num">19.170</td><td class="num td-orange">83,35%</td><td class="num td-orange">+0,75</td><td><span class="status-badge badge-attention">ATENÇÃO</span></td></tr>
+      <tr><td>27</td><td class="school-name">Vincenzo Lobassi</td><td class="num">83,5%</td><td class="num">83,3%</td><td class="num">16.660</td><td class="num">35.905</td><td class="num">19.245</td><td class="num">83,67%</td><td class="num">+0,37</td><td><span class="status-badge badge-target">NO ALVO</span></td></tr>
+      <tr><td>28</td><td class="school-name">Pietro Petri</td><td class="num">82,1%</td><td class="num">82,2%</td><td class="num">16.440</td><td class="num">35.303</td><td class="num">18.863</td><td class="num">82,01%</td><td class="num">−0,19</td><td><span class="status-badge badge-target">NO ALVO</span></td></tr>
+      <tr><td>29</td><td class="school-name">Bairro Jundiaizinho</td><td class="num">82,1%</td><td class="num">82,3%</td><td class="num">16.460</td><td class="num">35.303</td><td class="num">18.843</td><td class="num">81,93%</td><td class="num">−0,37</td><td><span class="status-badge badge-target">NO ALVO</span></td></tr>
+      <tr><td>30</td><td class="school-name">Rogério Levorin Prof.</td><td class="num">82,9%</td><td class="num">83,1%</td><td class="num">16.620</td><td class="num">35.647</td><td class="num">19.027</td><td class="num">82,73%</td><td class="num">−0,37</td><td><span class="status-badge badge-target">NO ALVO</span></td></tr>
+      <tr><td>31</td><td class="school-name">Jardim Alegria II</td><td class="num">83,2%</td><td class="num">83,4%</td><td class="num">16.680</td><td class="num">35.776</td><td class="num">19.096</td><td class="num">83,03%</td><td class="num">−0,37</td><td><span class="status-badge badge-target">NO ALVO</span></td></tr>
+    </tbody>
+  </table>
+
+  <div class="section-title"><span class="num">5</span> Tabela — 36 Escolas Confortáveis</div>
+  <p style="font-size:7.5pt; color:var(--texto-muted); margin-bottom:6px;">Ordenadas da menor folga à maior. Todas já possuem frequência acumulada suficiente.</p>
+  <table>
+    <thead><tr><th>#</th><th>Escola</th><th>IFA</th><th>Freq. Atual</th><th>Necessária</th><th>Folga (pp)</th></tr></thead>
+    <tbody>
+      <tr><td>32</td><td class="school-name">Chácara Camponesa JV</td><td class="num">83,7%</td><td class="num">84,0%</td><td class="num">83,44%</td><td class="num td-green">−0,56</td></tr>
+      <tr><td>33</td><td class="school-name">Isaura Valentini Hanser Profa</td><td class="num">84,0%</td><td class="num">84,6%</td><td class="num">83,48%</td><td class="num td-green">−1,12</td></tr>
+      <tr><td>34</td><td class="school-name">José Carlos da Silva Junior</td><td class="num">82,1%</td><td class="num">83,1%</td><td class="num">81,23%</td><td class="num td-green">−1,87</td></tr>
+      <tr><td>35</td><td class="school-name">Elvira Parada Manga Profa</td><td class="num">83,0%</td><td class="num">84,2%</td><td class="num">81,96%</td><td class="num td-green">−2,24</td></tr>
+      <tr><td>36</td><td class="school-name">Jardim São Francisco</td><td class="num">84,0%</td><td class="num">85,2%</td><td class="num">82,96%</td><td class="num td-green">−2,24</td></tr>
+      <tr><td>37</td><td class="school-name">Lydia Scalet Walker Profa</td><td class="num">84,0%</td><td class="num">85,2%</td><td class="num">82,96%</td><td class="num td-green">−2,24</td></tr>
+      <tr><td>38</td><td class="school-name">Dr. Nelson Manzanares</td><td class="num">83,6%</td><td class="num">85,4%</td><td class="num">82,03%</td><td class="num td-green">−3,37</td></tr>
+      <tr><td>39</td><td class="school-name">Joaquim M. da Silva Sobrinho Tte</td><td class="num">84,0%</td><td class="num">85,8%</td><td class="num">82,43%</td><td class="num td-green">−3,37</td></tr>
+      <tr><td>40</td><td class="school-name">Ozilde A. Passarella Dr.</td><td class="num">84,0%</td><td class="num">85,8%</td><td class="num">82,43%</td><td class="num td-green">−3,37</td></tr>
+      <tr><td>41</td><td class="school-name">Dr. Mario Toledo de Moraes</td><td class="num">83,3%</td><td class="num">85,3%</td><td class="num">81,56%</td><td class="num td-green">−3,74</td></tr>
+      <tr><td>42</td><td class="school-name">Aladino Polon</td><td class="num">84,0%</td><td class="num">86,2%</td><td class="num">82,09%</td><td class="num td-green">−4,11</td></tr>
+      <tr><td>43</td><td class="school-name">Belém da Serra</td><td class="num">84,0%</td><td class="num">86,2%</td><td class="num">82,09%</td><td class="num td-green">−4,11</td></tr>
+      <tr><td>44</td><td class="school-name">Benedito Aparecido Tavares Prof.</td><td class="num">84,0%</td><td class="num">86,5%</td><td class="num">81,83%</td><td class="num td-green">−4,67</td></tr>
+      <tr><td>45</td><td class="school-name">Benedito Fagundes Marques</td><td class="num">81,5%</td><td class="num">84,0%</td><td class="num">79,33%</td><td class="num td-green">−4,67</td></tr>
+      <tr><td>46</td><td class="school-name">Domingos Cambiaghi Prof.</td><td class="num">84,0%</td><td class="num">86,5%</td><td class="num">81,83%</td><td class="num td-green">−4,67</td></tr>
+      <tr><td>47</td><td class="school-name">Carlos A. de Pádua Fleury Prof.</td><td class="num">84,0%</td><td class="num">86,8%</td><td class="num">81,57%</td><td class="num td-green">−5,23</td></tr>
+      <tr><td>48</td><td class="school-name">Bueno de Azevedo Filho Prof.</td><td class="num">82,3%</td><td class="num">85,7%</td><td class="num">79,34%</td><td class="num td-green">−6,36</td></tr>
+      <tr><td>49</td><td class="school-name">Isaias Luiz Matiazzo</td><td class="num">84,0%</td><td class="num">87,4%</td><td class="num">81,04%</td><td class="num td-green">−6,36</td></tr>
+      <tr><td>50</td><td class="school-name">Armando Sestini</td><td class="num">84,0%</td><td class="num">87,5%</td><td class="num">80,96%</td><td class="num td-green">−6,54</td></tr>
+      <tr><td>51</td><td class="school-name">Elcio José Pereira Cotrim Prof.</td><td class="num">81,1%</td><td class="num">85,0%</td><td class="num">77,71%</td><td class="num td-green">−7,29</td></tr>
+      <tr><td>52</td><td class="school-name">Iraci Sartori V. da Silva Profa</td><td class="num">84,0%</td><td class="num">87,9%</td><td class="num">80,61%</td><td class="num td-green">−7,29</td></tr>
+      <tr><td>53</td><td class="school-name">Walter Ribas de Andrade Prof. EE</td><td class="num">84,0%</td><td class="num">88,0%</td><td class="num">80,52%</td><td class="num td-green">−7,48</td></tr>
+      <tr><td>54</td><td class="school-name">Adail Jarbas Duclos</td><td class="num">84,0%</td><td class="num">88,2%</td><td class="num">80,35%</td><td class="num td-green">−7,85</td></tr>
+      <tr><td>55</td><td class="school-name">Arthur Weingrill</td><td class="num">84,0%</td><td class="num">88,3%</td><td class="num">80,26%</td><td class="num td-green">−8,04</td></tr>
+      <tr><td>56</td><td class="school-name">Ullysses Sanches Ramires Prof.</td><td class="num">82,1%</td><td class="num">86,4%</td><td class="num">78,36%</td><td class="num td-green">−8,04</td></tr>
+      <tr><td>57</td><td class="school-name">Azevedo Soares</td><td class="num">84,0%</td><td class="num">88,6%</td><td class="num">80,00%</td><td class="num td-green">−8,60</td></tr>
+      <tr><td>58</td><td class="school-name">Olindo Dartora Dr.</td><td class="num">84,0%</td><td class="num">88,7%</td><td class="num">79,91%</td><td class="num td-green">−8,79</td></tr>
+      <tr><td>59</td><td class="school-name">Kátia M. Tarifa Leme Tonelli Profa</td><td class="num">82,6%</td><td class="num">87,4%</td><td class="num">78,43%</td><td class="num td-green">−8,97</td></tr>
+      <tr><td>60</td><td class="school-name">Walther Weiszflog</td><td class="num">84,0%</td><td class="num">88,8%</td><td class="num">79,83%</td><td class="num td-green">−8,97</td></tr>
+      <tr><td>61</td><td class="school-name">Albino Fiore</td><td class="num">84,0%</td><td class="num">88,9%</td><td class="num">79,74%</td><td class="num td-green">−9,16</td></tr>
+      <tr><td>62</td><td class="school-name">Otto Weiszflog</td><td class="num">82,1%</td><td class="num">87,0%</td><td class="num">77,84%</td><td class="num td-green">−9,16</td></tr>
+      <tr><td>63</td><td class="school-name">Pedro Lelis de Souza Prefeito</td><td class="num">84,0%</td><td class="num">88,9%</td><td class="num">79,74%</td><td class="num td-green">−9,16</td></tr>
+      <tr><td>64</td><td class="school-name">Celestina V. Lengenfelder Profa</td><td class="num">84,0%</td><td class="num">89,5%</td><td class="num">79,22%</td><td class="num td-green">−10,28</td></tr>
+      <tr><td>65</td><td class="school-name">Lenita Corrêa Camargo Profa</td><td class="num">84,0%</td><td class="num">90,9%</td><td class="num">78,00%</td><td class="num td-green">−12,90</td></tr>
+      <tr><td>66</td><td class="school-name">Francisco G. Vieira Prof.</td><td class="num">84,0%</td><td class="num">91,5%</td><td class="num">77,48%</td><td class="num td-green">−14,02</td></tr>
+      <tr><td>67</td><td class="school-name">Alfried Theodor Weiszflog</td><td class="num">84,0%</td><td class="num">94,0%</td><td class="num">75,30%</td><td class="num td-green">−18,70</td></tr>
+    </tbody>
+  </table>
+  <div class="page-num">Página 05</div>
+</div>
+
+<!-- GRÁFICO + CRÍTICO/ALERTA -->
+<div class="page">
+  <div class="header">
+    <div class="logo-area">
+      <img src="https://i.ibb.co/0p01LzxB/logo3de.jpg" alt="Logo SEDUC SP">
+      <div class="logo-text">URE Caieiras<span>UNIDADE REGIONAL DE ENSINO CAIEIRAS — SP</span></div>
+    </div>
+    <div class="title-badge">Relatório de Frequência 2026</div>
+  </div>
+
+  <div class="section-title"><span class="num">G</span> Gráfico Comparativo — 16 Escolas Críticas e em Alerta</div>
+  <p style="font-size:7.5pt; color:var(--texto-muted); margin-bottom:6px;">Frequência atual (barra clara) vs. frequência necessária (barra sólida).</p>
+
+  <div class="bar-chart">
+    <div class="bar-row"><div class="bar-label">Isaura M. Botto</div><div class="bar-track"><div class="bar-fill-current" style="width:77.6%;background:var(--vermelho-bg)"></div><div class="bar-fill-needed" style="width:89.57%;border-color:var(--vermelho)"></div></div><div class="bar-values">77,6% → 89,57%</div></div>
+    <div class="bar-row"><div class="bar-label">Afonso Moreno</div><div class="bar-track"><div class="bar-fill-current" style="width:77.5%;background:var(--vermelho-bg)"></div><div class="bar-fill-needed" style="width:87.41%;border-color:var(--vermelho)"></div></div><div class="bar-values">77,5% → 87,41%</div></div>
+    <div class="bar-row"><div class="bar-label">Alberto Graf Cap.</div><div class="bar-track"><div class="bar-fill-current" style="width:78.7%;background:var(--vermelho-bg)"></div><div class="bar-fill-needed" style="width:88.61%;border-color:var(--vermelho)"></div></div><div class="bar-values">78,7% → 88,61%</div></div>
+    <div class="bar-row"><div class="bar-label">Jardim das Rosas</div><div class="bar-track"><div class="bar-fill-current" style="width:79%;background:var(--vermelho-bg)"></div><div class="bar-fill-needed" style="width:87.41%;border-color:var(--vermelho)"></div></div><div class="bar-values">79,0% → 87,41%</div></div>
+    <div class="bar-row"><div class="bar-label">José B. Martins</div><div class="bar-track"><div class="bar-fill-current" style="width:78.5%;background:var(--vermelho-bg)"></div><div class="bar-fill-needed" style="width:86.91%;border-color:var(--vermelho)"></div></div><div class="bar-values">78,5% → 86,91%</div></div>
+    <div class="bar-row"><div class="bar-label">Nair H. Romaro</div><div class="bar-track"><div class="bar-fill-current" style="width:79.8%;background:var(--vermelho-bg)"></div><div class="bar-fill-needed" style="width:87.65%;border-color:var(--vermelho)"></div></div><div class="bar-values">79,8% → 87,65%</div></div>
+    <div class="bar-row"><div class="bar-label">Rituco Mitani</div><div class="bar-track"><div class="bar-fill-current" style="width:78.9%;background:var(--vermelho-bg)"></div><div class="bar-fill-needed" style="width:86.57%;border-color:var(--vermelho)"></div></div><div class="bar-values">78,9% → 86,57%</div></div>
+    <div class="bar-row"><div class="bar-label">José R. Melchior</div><div class="bar-track"><div class="bar-fill-current" style="width:80.2%;background:var(--vermelho-bg)"></div><div class="bar-fill-needed" style="width:87.3%;border-color:var(--vermelho)"></div></div><div class="bar-values">80,2% → 87,30%</div></div>
+    <div class="bar-row"><div class="bar-label">Hermelina Pass.</div><div class="bar-track"><div class="bar-fill-current" style="width:80.4%;background:var(--vermelho-bg)"></div><div class="bar-fill-needed" style="width:86.01%;border-color:var(--vermelho)"></div></div><div class="bar-values">80,4% → 86,01%</div></div>
+    <div class="bar-row"><div class="bar-label">Jocimara V. Silva</div><div class="bar-track"><div class="bar-fill-current" style="width:80.2%;background:var(--vermelho-bg)"></div><div class="bar-fill-needed" style="width:85.62%;border-color:var(--vermelho)"></div></div><div class="bar-values">80,2% → 85,62%</div></div>
+    <div class="bar-row"><div class="bar-label">Zilton Bicudo</div><div class="bar-track"><div class="bar-fill-current" style="width:81.5%;background:var(--amarelo-bg)"></div><div class="bar-fill-needed" style="width:85.43%;border-color:var(--amarelo-texto)"></div></div><div class="bar-values">81,5% → 85,43%</div></div>
+    <div class="bar-row"><div class="bar-label">Pedro P. Aguiar</div><div class="bar-track"><div class="bar-fill-current" style="width:81.6%;background:var(--amarelo-bg)"></div><div class="bar-fill-needed" style="width:84.97%;border-color:var(--amarelo-texto)"></div></div><div class="bar-values">81,6% → 84,97%</div></div>
+    <div class="bar-row"><div class="bar-label">Parque 120 II</div><div class="bar-track"><div class="bar-fill-current" style="width:81%;background:var(--amarelo-bg)"></div><div class="bar-fill-needed" style="width:84.37%;border-color:var(--amarelo-texto)"></div></div><div class="bar-values">81,0% → 84,37%</div></div>
+    <div class="bar-row"><div class="bar-label">Pedro Galrão</div><div class="bar-track"><div class="bar-fill-current" style="width:82.2%;background:var(--amarelo-bg)"></div><div class="bar-fill-needed" style="width:85.57%;border-color:var(--amarelo-texto)"></div></div><div class="bar-values">82,2% → 85,57%</div></div>
+    <div class="bar-row"><div class="bar-label">Jardim Silvia II</div><div class="bar-track"><div class="bar-fill-current" style="width:80.9%;background:var(--amarelo-bg)"></div><div class="bar-fill-needed" style="width:84.08%;border-color:var(--amarelo-texto)"></div></div><div class="bar-values">80,9% → 84,08%</div></div>
+    <div class="bar-row"><div class="bar-label">Odarico O. Nasc.</div><div class="bar-track"><div class="bar-fill-current" style="width:82.3%;background:var(--amarelo-bg)"></div><div class="bar-fill-needed" style="width:85.48%;border-color:var(--amarelo-texto)"></div></div><div class="bar-values">82,3% → 85,48%</div></div>
+  </div>
+
+  <div class="section-title"><span class="num">6</span> Escolas em Situação Crítica — Detalhamento</div>
+
+  <div class="detail-box box-critical">
+    <div class="detail-header"><h4>1. Isaura de Miranda Botto Profa — 5678</h4><span class="status-badge badge-critical">CRÍTICO</span></div>
+    <div class="detail-body">
+      <div class="calc-steps">
+        <div class="calc-step"><div class="step-label">Passo 1</div><div class="step-value">0,840 × 43 = 36.120</div></div>
+        <div class="calc-step"><div class="step-label">Passo 2</div><div class="step-value">0,776 × 20 = 15.520</div></div>
+        <div class="calc-step"><div class="step-label">Passo 3</div><div class="step-value">36.120 − 15.520 = 20.600</div></div>
+        <div class="calc-step"><div class="step-label">Passo 4 — Necessária</div><div class="step-value">20.600 ÷ 23 = <strong>89,57%</strong></div></div>
+      </div>
+      <p style="font-size:8pt;margin-top:6px;"><strong>Diagnóstico:</strong> 2,4pp abaixo do TPSS. Precisa <strong>+11,97pp</strong>. 601 matrículas. Supervisor(a): <strong>Catia de Freitas Oliveira</strong>. <strong>Plano de ação emergencial necessário.</strong></p>
+    </div>
+  </div>
+
+  <div class="detail-box box-critical">
+    <div class="detail-header"><h4>2. Afonso Moreno — 41853</h4><span class="status-badge badge-critical">CRÍTICO</span></div>
+    <div class="detail-body">
+      <div class="calc-steps">
+        <div class="calc-step"><div class="step-label">Passo 1</div><div class="step-value">0,828 × 43 = 35.604</div></div>
+        <div class="calc-step"><div class="step-label">Passo 2</div><div class="step-value">0,775 × 20 = 15.500</div></div>
+        <div class="calc-step"><div class="step-label">Passo 3</div><div class="step-value">35.604 − 15.500 = 20.104</div></div>
+        <div class="calc-step"><div class="step-label">Passo 4 — Necessária</div><div class="step-value">20.104 ÷ 23 = <strong>87,41%</strong></div></div>
+      </div>
+      <p style="font-size:8pt;margin-top:6px;"><strong>Diagnóstico:</strong> 2,5pp abaixo do TPSS. Precisa <strong>+9,91pp</strong>. 1.187 matrículas (maior escola em risco). <strong>Sem supervisor designado</strong> — lacuna crítica a preencher.</p>
+    </div>
+  </div>
+
+  <div class="detail-box box-critical">
+    <div class="detail-header"><h4>3. Alberto Graf Capitão — 5575</h4><span class="status-badge badge-critical">CRÍTICO</span></div>
+    <div class="detail-body">
+      <div class="calc-steps">
+        <div class="calc-step"><div class="step-label">Passo 1</div><div class="step-value">0,840 × 43 = 36.120</div></div>
+        <div class="calc-step"><div class="step-label">Passo 2</div><div class="step-value">0,787 × 20 = 15.740</div></div>
+        <div class="calc-step"><div class="step-label">Passo 3</div><div class="step-value">36.120 − 15.740 = 20.380</div></div>
+        <div class="calc-step"><div class="step-label">Passo 4 — Necessária</div><div class="step-value">20.380 ÷ 23 = <strong>88,61%</strong></div></div>
+      </div>
+      <p style="font-size:8pt;margin-top:6px;"><strong>Diagnóstico:</strong> 1,3pp abaixo do TPSS. Precisa <strong>+9,91pp</strong>. 743 matrículas. Supervisor(a): <strong>Jesse Pereira Felipe</strong>. <strong>Plano de ação emergencial necessário.</strong></p>
+    </div>
+  </div>
+
+  <div class="page-num">Página 06</div>
+</div>
+
+<!-- CRÍTICOS CONTINUAÇÃO + ALERTAS -->
+<div class="page">
+  <div class="header">
+    <div class="logo-area">
+      <img src="https://i.ibb.co/0p01LzxB/logo3de.jpg" alt="Logo SEDUC SP">
+      <div class="logo-text">URE Caieiras<span>UNIDADE REGIONAL DE ENSINO CAIEIRAS — SP</span></div>
+    </div>
+    <div class="title-badge">Relatório de Frequência 2026</div>
+  </div>
+
+  <div class="detail-box box-critical">
+    <div class="detail-header"><h4>4. Jardim das Rosas — 923114</h4><span class="status-badge badge-critical">CRÍTICO</span></div>
+    <div class="detail-body">
+      <div class="calc-steps">
+        <div class="calc-step"><div class="step-label">Passos 1-3</div><div class="step-value">0,835×43=35.905 → 0,790×20=15.800 → Falta=20.105</div></div>
+        <div class="calc-step"><div class="step-label">Necessária</div><div class="step-value">20.105 ÷ 23 = <strong>87,41%</strong> (+8,41pp)</div></div>
+      </div>
+      <p style="font-size:7.5pt;margin-top:4px;">1.029 matrículas. Supervisor(a): <strong>James Ernesto Mazzanti</strong>.</p>
+    </div>
+  </div>
+
+  <div class="detail-box box-critical">
+    <div class="detail-header"><h4>5. José de Barros Martins Editor — 913443</h4><span class="status-badge badge-critical">CRÍTICO</span></div>
+    <div class="detail-body">
+      <div class="calc-steps">
+        <div class="calc-step"><div class="step-label">Passos 1-3</div><div class="step-value">0,830×43=35.690 → 0,785×20=15.700 → Falta=19.990</div></div>
+        <div class="calc-step"><div class="step-label">Necessária</div><div class="step-value">19.990 ÷ 23 = <strong>86,91%</strong> (+8,41pp)</div></div>
+      </div>
+      <p style="font-size:7.5pt;margin-top:4px;">1.108 matrículas. Supervisor(a): <strong>Agnes Regina de Oliveira Leite</strong>.</p>
+    </div>
+  </div>
+
+  <div class="detail-box box-critical">
+    <div class="detail-header"><h4>6. Nair Hannickel Romaro — 904934 &nbsp;|&nbsp; 7. Rituco Mitani — 5691</h4><span class="status-badge badge-critical">CRÍTICO</span></div>
+    <div class="detail-body">
+      <div class="calc-steps">
+        <div class="calc-step"><div class="step-label">Nair — IFA 84,0% / Freq 79,8%</div><div class="step-value">Falta = 20.160 → Necessária = <strong>87,65%</strong> (+7,85pp)</div></div>
+        <div class="calc-step"><div class="step-label">Rituco — IFA 83,0% / Freq 78,9%</div><div class="step-value">Falta = 19.910 → Necessária = <strong>86,57%</strong> (+7,67pp)</div></div>
+      </div>
+      <p style="font-size:7.5pt;margin-top:4px;">Nair: 333 mat., Sup. Márcia Maria V. da Maia. Rituco: 873 mat., Sup. Jadilson Lourenço da Silva.</p>
+    </div>
+  </div>
+
+  <div class="detail-box box-critical">
+    <div class="detail-header"><h4>8. José Roberto Melchior Dr. — 902378</h4><span class="status-badge badge-critical">CRÍTICO</span></div>
+    <div class="detail-body">
+      <div class="calc-steps">
+        <div class="calc-step"><div class="step-label">Passos 1-3</div><div class="step-value">0,840×43=36.120 → 0,802×20=16.040 → Falta=20.080</div></div>
+        <div class="calc-step"><div class="step-label">Necessária</div><div class="step-value">20.080 ÷ 23 = <strong>87,30%</strong> (+7,10pp)</div></div>
+      </div>
+      <p style="font-size:7.5pt;margin-top:4px;">611 matrículas. Supervisor(a): <strong>Iramaia Pasotti</strong>.</p>
+    </div>
+  </div>
+
+  <div class="detail-box box-critical">
+    <div class="detail-header"><h4>9. Hermelina Passarella Profa — 5685 &nbsp;|&nbsp; 10. Jocimara Vieira da Silva Profa — 923643</h4><span class="status-badge badge-critical">CRÍTICO</span></div>
+    <div class="detail-body">
+      <div class="calc-steps">
+        <div class="calc-step"><div class="step-label">Hermelina — IFA 83,4% / Freq 80,4%</div><div class="step-value">Falta = 19.782 → Necessária = <strong>86,01%</strong> (+5,61pp)</div></div>
+        <div class="calc-step"><div class="step-label">Jocimara — IFA 83,1% / Freq 80,2%</div><div class="step-value">Falta = 19.693 → Necessária = <strong>85,62%</strong> (+5,42pp)</div></div>
+      </div>
+      <p style="font-size:7.5pt;margin-top:4px;">Hermelina: 937 mat., Sup. Iramaia Pasotti. Jocimara: 1.282 mat., Sup. Agnes Regina de Oliveira Leite.</p>
+    </div>
+  </div>
+
+  <div class="section-title"><span class="num">6b</span> Escolas em Alerta</div>
+
+  <div class="detail-box box-alert">
+    <div class="detail-header"><h4>11. Zilton Bicudo Prof. — 925482</h4><span class="status-badge badge-alert">ALERTA</span></div>
+    <div class="detail-body">
+      <div class="calc-steps">
+        <div class="calc-step"><div class="step-label">Passos 1-3</div><div class="step-value">0,836×43=35.948 → 0,815×20=16.300 → Falta=19.648</div></div>
+        <div class="calc-step"><div class="step-label">Necessária</div><div class="step-value">19.648 ÷ 23 = <strong>85,43%</strong> (+3,93pp)</div></div>
+      </div>
+      <p style="font-size:7.5pt;margin-top:4px;">966 matrículas. Supervisor(a): <strong>Catia de Freitas Oliveira</strong>.</p>
+    </div>
+  </div>
+
+  <div class="detail-box box-alert">
+    <div class="detail-header"><h4>12–14. Pedro Paulo de Aguiar — Parque Cento e Vinte II — Pedro Galrão</h4><span class="status-badge badge-alert">ALERTA</span></div>
+    <div class="detail-body">
+      <div class="calc-steps">
+        <div class="calc-step"><div class="step-label">Pedro Paulo — IFA 83,4% / 81,6%</div><div class="step-value">Necessária = <strong>84,97%</strong> (+3,37pp) · 1.369 mat.</div></div>
+        <div class="calc-step"><div class="step-label">Parque 120 II — IFA 82,8% / 81,0%</div><div class="step-value">Necessária = <strong>84,37%</strong> (+3,37pp) · 1.390 mat.</div></div>
+        <div class="calc-step"><div class="step-label">Pedro Galrão — IFA 84,0% / 82,2%</div><div class="step-value">Necessária = <strong>85,57%</strong> (+3,37pp) · 200 mat.</div></div>
+      </div>
+      <p style="font-size:7.5pt;margin-top:4px;">Pedro Paulo: Sup. Nelson Petz Jr. Parque 120: Sup. Sabrina T. Rodrigues. Pedro Galrão: Sup. Thiago S. Q. Gomes da Silva.</p>
+    </div>
+  </div>
+
+  <div class="detail-box box-alert">
+    <div class="detail-header"><h4>15. Jardim Silvia II — 924532 &nbsp;|&nbsp; 16. Odarico Oliveira Nasc. — 5733</h4><span class="status-badge badge-alert">ALERTA</span></div>
+    <div class="detail-body">
+      <div class="calc-steps">
+        <div class="calc-step"><div class="step-label">Jardim Silvia II — IFA 82,6% / 80,9%</div><div class="step-value">Necessária = <strong>84,08%</strong> (+3,18pp) · 1.593 mat.</div></div>
+        <div class="calc-step"><div class="step-label">Odarico — IFA 84,0% / 82,3%</div><div class="step-value">Necessária = <strong>85,48%</strong> (+3,18pp) · 315 mat.</div></div>
+      </div>
+      <p style="font-size:7.5pt;margin-top:4px;">Jardim Silvia: Sup. Viviane Costa de Souza Couto. Odarico: Sup. Márcia Maria V. da Maia.</p>
+    </div>
+  </div>
+
+  <div class="page-num">Página 07</div>
+</div>
+
+<!-- ATENÇÃO DETALHADA + NO ALVO -->
+<div class="page">
+  <div class="header">
+    <div class="logo-area">
+      <img src="https://i.ibb.co/0p01LzxB/logo3de.jpg" alt="Logo SEDUC SP">
+      <div class="logo-text">URE Caieiras<span>UNIDADE REGIONAL DE ENSINO CAIEIRAS — SP</span></div>
+    </div>
+    <div class="title-badge">Relatório de Frequência 2026</div>
+  </div>
+
+  <div class="section-title"><span class="num">7</span> Escolas em Atenção — Cálculo Detalhado</div>
+
+  <div class="detail-box box-attention">
+    <div class="detail-header"><h4>17–26. Escolas em Atenção (Gap +0,75 a +2,99pp)</h4><span class="status-badge badge-attention">ATENÇÃO</span></div>
+    <div class="detail-body">
+      <table style="font-size:7pt;">
+        <thead><tr><th>#</th><th>Escola</th><th>IFA</th><th>Freq.</th><th>Necessária</th><th>Gap</th><th>Mat.</th><th>Supervisor(a)</th></tr></thead>
+        <tbody>
+          <tr><td>17</td><td>Nide Zaim Cardoso Profa</td><td class="num">84,0%</td><td class="num">82,4%</td><td class="num">85,39%</td><td class="num td-orange">+2,99</td><td class="num">737</td><td>Iramaia Pasotti</td></tr>
+          <tr><td>18</td><td>Aparecido Roberto Tonelotti Prof.</td><td class="num">84,0%</td><td class="num">82,5%</td><td class="num">85,30%</td><td class="num td-orange">+2,80</td><td class="num">901</td><td>James Ernesto Mazzanti</td></tr>
+          <tr><td>19</td><td>Luiz Alexandre dos Santos Vereador</td><td class="num">84,0%</td><td class="num">82,7%</td><td class="num">85,13%</td><td class="num td-orange">+2,43</td><td class="num">647</td><td><em>Sem supervisor</em></td></tr>
+          <tr><td>20</td><td>José Parada Professor</td><td class="num">82,6%</td><td class="num">81,3%</td><td class="num">83,73%</td><td class="num td-orange">+2,43</td><td class="num">1.088</td><td>Claudineia de A. Pessoa Silva</td></tr>
+          <tr><td>21</td><td>Bairro do Itaim</td><td class="num">84,0%</td><td class="num">82,8%</td><td class="num">85,04%</td><td class="num td-orange">+2,24</td><td class="num">271</td><td>Thiago S. Q. Gomes da Silva</td></tr>
+          <tr><td>22</td><td>Ana Maria Garrido Orlandin Profa</td><td class="num">82,3%</td><td class="num">81,2%</td><td class="num">83,26%</td><td class="num td-orange">+2,06</td><td class="num">847</td><td>Sabrina Teodoro Rodrigues</td></tr>
+          <tr><td>23</td><td>Maria Zeza Gomes de Oliveira</td><td class="num">84,0%</td><td class="num">82,9%</td><td class="num">84,96%</td><td class="num td-orange">+2,06</td><td class="num">363</td><td>Celso de Jesus Nicoleti</td></tr>
+          <tr><td>24</td><td>Suzana Dias</td><td class="num">84,0%</td><td class="num">83,3%</td><td class="num">84,61%</td><td class="num td-orange">+1,31</td><td class="num">484</td><td>Sabrina Teodoro Rodrigues</td></tr>
+          <tr><td>25</td><td>Ivone dos Anjos da Silva Campos Profa</td><td class="num">84,0%</td><td class="num">83,4%</td><td class="num">84,52%</td><td class="num td-orange">+1,12</td><td class="num">901</td><td>Andreia de Oliveira</td></tr>
+          <tr><td>26</td><td>Paulo Duarte</td><td class="num">83,0%</td><td class="num">82,6%</td><td class="num">83,35%</td><td class="num td-orange">+0,75</td><td class="num">887</td><td>Viviane Costa de Souza Couto</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="section-title"><span class="num">7b</span> Escolas No Alvo — Monitoramento Próximo</div>
+
+  <div class="detail-box" style="border-color:#93c5fd;">
+    <div class="detail-header" style="background:var(--azul-badge-bg);color:var(--azul-badge-txt);"><h4>27–31. Escolas No Alvo (|Gap| &lt; 0,5pp)</h4><span class="status-badge badge-target">NO ALVO</span></div>
+    <div class="detail-body">
+      <table style="font-size:7pt;">
+        <thead><tr><th>#</th><th>Escola</th><th>IFA</th><th>Freq.</th><th>Necessária</th><th>Gap</th><th>Mat.</th><th>Supervisor(a)</th></tr></thead>
+        <tbody>
+          <tr><td>27</td><td>Vincenzo Lobassi</td><td class="num">83,5%</td><td class="num">83,3%</td><td class="num">83,67%</td><td class="num td-orange">+0,37</td><td class="num">493</td><td>Sabrina Teodoro Rodrigues</td></tr>
+          <tr><td>28</td><td>Pietro Petri</td><td class="num">82,1%</td><td class="num">82,2%</td><td class="num">82,01%</td><td class="num">−0,19</td><td class="num">835</td><td>James Ernesto Mazzanti</td></tr>
+          <tr><td>29</td><td>Bairro Jundiaizinho</td><td class="num">82,1%</td><td class="num">82,3%</td><td class="num">81,93%</td><td class="num">−0,37</td><td class="num">448</td><td>Thiago S. Q. Gomes da Silva</td></tr>
+          <tr><td>30</td><td>Rogério Levorin Prof.</td><td class="num">82,9%</td><td class="num">83,1%</td><td class="num">82,73%</td><td class="num">−0,37</td><td class="num">1.604</td><td>Claudineia de A. Pessoa Silva</td></tr>
+          <tr><td>31</td><td>Jardim Alegria II</td><td class="num">83,2%</td><td class="num">83,4%</td><td class="num">83,03%</td><td class="num">−0,37</td><td class="num">1.209</td><td>Viviane Costa de Souza Couto</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:7pt; margin-top:6px; color:var(--texto-muted);">Vincenzo Lobassi é a única escola No Alvo com frequência necessária ligeiramente acima da atual (+0,37pp). As demais já têm folga, mas inferior a 0,5pp.</p>
+    </div>
+  </div>
+
+  <div class="page-num">Página 08</div>
+</div>
+
+<!-- TOP FOLGA + SUPERVISORES -->
+<div class="page">
+  <div class="header">
+    <div class="logo-area">
+      <img src="https://i.ibb.co/0p01LzxB/logo3de.jpg" alt="Logo SEDUC SP">
+      <div class="logo-text">URE Caieiras<span>UNIDADE REGIONAL DE ENSINO CAIEIRAS — SP</span></div>
+    </div>
+    <div class="title-badge">Relatório de Frequência 2026</div>
+  </div>
+
+  <div class="section-title"><span class="num">8</span> Top 10 — Escolas com Maior Folga</div>
+  <p style="font-size:7.5pt; color:var(--texto-muted); margin-bottom:6px;">Estas escolas podem sofrer quedas significativas e ainda assim alcançar o IFA.</p>
+
+  <table>
+    <thead><tr><th>#</th><th>Escola</th><th>IFA</th><th>Freq. Atual</th><th>Necessária</th><th>Margem</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td class="school-name">Alfried Theodor Weiszflog</td><td class="num">84,0%</td><td class="num">94,0%</td><td class="num">75,30%</td><td class="num td-green">−18,70pp</td></tr>
+      <tr><td>2</td><td class="school-name">Francisco G. Vieira Prof.</td><td class="num">84,0%</td><td class="num">91,5%</td><td class="num">77,48%</td><td class="num td-green">−14,02pp</td></tr>
+      <tr><td>3</td><td class="school-name">Lenita Corrêa Camargo Profa</td><td class="num">84,0%</td><td class="num">90,9%</td><td class="num">78,00%</td><td class="num td-green">−12,90pp</td></tr>
+      <tr><td>4</td><td class="school-name">Celestina V. Lengenfelder Profa</td><td class="num">84,0%</td><td class="num">89,5%</td><td class="num">79,22%</td><td class="num td-green">−10,28pp</td></tr>
+      <tr><td>5</td><td class="school-name">Albino Fiore</td><td class="num">84,0%</td><td class="num">88,9%</td><td class="num">79,74%</td><td class="num td-green">−9,16pp</td></tr>
+      <tr><td>6</td><td class="school-name">Otto Weiszflog</td><td class="num">82,1%</td><td class="num">87,0%</td><td class="num">77,84%</td><td class="num td-green">−9,16pp</td></tr>
+      <tr><td>7</td><td class="school-name">Pedro Lelis de Souza Prefeito</td><td class="num">84,0%</td><td class="num">88,9%</td><td class="num">79,74%</td><td class="num td-green">−9,16pp</td></tr>
+      <tr><td>8</td><td class="school-name">Kátia M. Tarifa Leme Tonelli Profa</td><td class="num">82,6%</td><td class="num">87,4%</td><td class="num">78,43%</td><td class="num td-green">−8,97pp</td></tr>
+      <tr><td>9</td><td class="school-name">Walther Weiszflog</td><td class="num">84,0%</td><td class="num">88,8%</td><td class="num">79,83%</td><td class="num td-green">−8,97pp</td></tr>
+      <tr><td>10</td><td class="school-name">Olindo Dartora Dr.</td><td class="num">84,0%</td><td class="num">88,7%</td><td class="num">79,91%</td><td class="num td-green">−8,79pp</td></tr>
+    </tbody>
+  </table>
+
+  <div class="section-title"><span class="num">9</span> Análise por Supervisor de Ensino</div>
+  <p style="font-size:7.5pt; color:var(--texto-muted); margin-bottom:6px;">Supervisores com escolas em situação crítica ou alerta merecem atenção prioritária.</p>
+
+  <table>
+    <thead><tr><th>Supervisor(a)</th><th>Total Escolas</th><th>Crítico</th><th>Alerta</th><th>Atenção</th><th>No Alvo</th><th>Confortável</th></tr></thead>
+    <tbody>
+      <tr><td class="school-name">Iramaia Pasotti</td><td class="num">4</td><td class="num td-red">2</td><td class="num">0</td><td class="num td-orange">1</td><td class="num">0</td><td class="num td-green">1</td></tr>
+      <tr><td class="school-name">Agnes Regina de O. Leite</td><td class="num">4</td><td class="num td-red">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num td-green">2</td></tr>
+      <tr><td class="school-name">Catia de Freitas Oliveira</td><td class="num">4</td><td class="num td-red">1</td><td class="num td-orange">1</td><td class="num">0</td><td class="num">0</td><td class="num td-green">2</td></tr>
+      <tr><td class="school-name">James Ernesto Mazzanti</td><td class="num">4</td><td class="num td-red">1</td><td class="num">0</td><td class="num td-orange">1</td><td class="num">1</td><td class="num td-green">1</td></tr>
+      <tr><td class="school-name">Márcia Maria V. da Maia</td><td class="num">4</td><td class="num td-red">1</td><td class="num td-orange">1</td><td class="num">0</td><td class="num">0</td><td class="num td-green">2</td></tr>
+      <tr><td class="school-name">Jadilson Lourenço da Silva</td><td class="num">3</td><td class="num td-red">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num td-green">2</td></tr>
+      <tr><td class="school-name">Jesse Pereira Felipe</td><td class="num">4</td><td class="num td-red">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num td-green">3</td></tr>
+      <tr><td class="school-name">Viviane Costa de S. Couto</td><td class="num">4</td><td class="num">0</td><td class="num td-orange">1</td><td class="num td-orange">1</td><td class="num">1</td><td class="num td-green">1</td></tr>
+      <tr><td class="school-name">Sabrina Teodoro Rodrigues</td><td class="num">4</td><td class="num">0</td><td class="num td-orange">1</td><td class="num td-orange">2</td><td class="num">1</td><td class="num td-green">0</td></tr>
+      <tr><td class="school-name">Thiago S. Q. Gomes da Silva</td><td class="num">3</td><td class="num">0</td><td class="num td-orange">1</td><td class="num td-orange">1</td><td class="num">1</td><td class="num td-green">0</td></tr>
+      <tr><td class="school-name">Nelson Petz Junior</td><td class="num">3</td><td class="num">0</td><td class="num td-orange">1</td><td class="num">0</td><td class="num">0</td><td class="num td-green">2</td></tr>
+      <tr><td class="school-name">Andreia de Oliveira</td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num td-orange">1</td><td class="num">0</td><td class="num td-green">3</td></tr>
+      <tr><td class="school-name">Celso de Jesus Nicoleti</td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num td-orange">1</td><td class="num">0</td><td class="num td-green">3</td></tr>
+      <tr><td class="school-name">Claudineia de A. Pessoa Silva</td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num td-orange">1</td><td class="num">1</td><td class="num td-green">1</td></tr>
+      <tr><td class="school-name">Demais (6 supervisores)</td><td class="num">14</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num td-green">14</td></tr>
+      <tr style="background:#fee2e2;"><td class="school-name"><strong>Sem supervisor designado</strong></td><td class="num">4</td><td class="num td-red">1</td><td class="num">0</td><td class="num td-orange">1</td><td class="num">0</td><td class="num td-green">2</td></tr>
+    </tbody>
+  </table>
+  <p style="font-size:7pt; color:var(--texto-muted); font-style:italic;">* Afonso Moreno (CRÍTICO) e Luiz Alexandre dos Santos (ATENÇÃO) não possuem supervisor — lacuna a preencher urgentemente.</p>
+  <div class="page-num">Página 09</div>
+</div>
+
+<!-- RECOMENDAÇÕES -->
+<div class="page">
+  <div class="header">
+    <div class="logo-area">
+      <img src="https://i.ibb.co/0p01LzxB/logo3de.jpg" alt="Logo SEDUC SP">
+      <div class="logo-text">URE Caieiras<span>UNIDADE REGIONAL DE ENSINO CAIEIRAS — SP</span></div>
+    </div>
+    <div class="title-badge">Relatório de Frequência 2026</div>
+  </div>
+
+  <div class="section-title"><span class="num">10</span> Recomendações Estratégicas</div>
+
+  <div class="rec-box rec-critical">
+    <h4>Ação Emergencial — 10 Escolas Críticas</h4>
+    <p>As 10 escolas em situação crítica precisam <strong>elevar a frequência entre 5,42 e 11,97 pontos percentuais</strong> nas próximas 23 semanas. Destaca-se <strong>Isaura de Miranda Botto</strong> (necessita 89,57% com atual de 77,6%), <strong>Afonso Moreno</strong> (necessita 87,41% com atual de 77,5% e sem supervisor) e <strong>Alberto Graf Capitão</strong> (necessita 88,61% com atual de 78,7%). Recomenda-se: reunião imediata com diretores, plano de busca ativa de alunos faltosos, contato com famílias e avaliação de causas-raiz da evasão.</p>
+  </div>
+
+  <div class="rec-box rec-alert">
+    <h4>Monitoramento Intensivo — 6 Escolas em Alerta</h4>
+    <p>As escolas em alerta precisam de <strong>3,18 a 3,93pp de elevação</strong>. Acompanhamento quinzenal obrigatório. <strong>Zilton Bicudo</strong> (gap +3,93pp, sob Catia de Freitas Oliveira) e <strong>Jardim Silvia II</strong> (gap +3,18pp, 1.593 matrículas — maior escola em alerta) merecem atenção imediata.</p>
+  </div>
+
+  <div class="rec-box rec-attention">
+    <h4>Acompanhamento — 10 Escolas em Atenção</h4>
+    <p>As 10 escolas em atenção precisam de <strong>0,75 a 2,99pp de elevação</strong>. Metas alcançáveis com melhoria pontual de frequência. <strong>Nide Zaim Cardoso</strong> (+2,99pp) e <strong>Aparecido Roberto Tonelotti</strong> (+2,80pp) são as mais desafiadoras deste grupo.</p>
+  </div>
+
+  <div class="rec-box rec-comfort">
+    <h4>Visão Geral — Rede em Bom Equilíbrio</h4>
+    <p><strong>36 escolas (54%)</strong> estão confortáveis e 5 escolas No Alvo. Dentre as confortáveis, 10 escolas têm folga superior a 8pp, podendo absorver quedas significativas sem comprometer o IFA. <strong>Alfried Theodor Weiszflog</strong> lidera com margem de 18,70pp.</p>
+  </div>
+
+  <div class="note-box">
+    <strong>Pontos de Atenção Específicos:</strong><br>
+    1. <strong>Sem Supervisor:</strong> Afonso Moreno (CRÍTICO, 1.187 matrículas) e Luiz Alexandre dos Santos (ATENÇÃO, 647 matrículas) não possuem supervisor designado. Atribuição urgente é necessária.<br>
+    2. <strong>Supervisor(a) com maior carga crítica:</strong> Iramaia Pasotti responde por 2 escolas críticas (Hermelina Passarella e José Roberto Melchior) e 1 em atenção (Nide Zaim Cardoso).<br>
+    3. <strong>Agnes Regina de Oliveira Leite</strong> também responde por 2 escolas críticas (Jocimara Vieira da Silva e José de Barros Martins Editor).<br>
+    4. <strong>Dados de Evolução:</strong> Todos os valores de evolução de presença estão em 0,0% na Semana 20, o que pode indicar indisponibilidade deste campo no período de referência.<br>
+    5. <strong>Rogério Levorin</strong> é a maior escola No Alvo (1.604 matrículas, gap −0,37pp), requerendo monitoramento por seu porte.
+  </div>
+
+  <footer>
+    URE Caieiras — Secretaria de Educação do Estado de São Paulo<br>
+    Relatório gerado automaticamente com base nos dados da Semana 20 do sistema Escola Total.<br>
+    <a href="#">Documento de Uso Interno</a> — Junho 2026
+  </footer>
+  <div class="page-num">Página 10</div>
+</div>
+
+</div>
+</body>
+</html>
